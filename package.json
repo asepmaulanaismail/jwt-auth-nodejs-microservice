@@ -1,0 +1,11 @@
+{
+    "name": "jwt-auth-nodejs-microservice",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "jsonwebtoken": "^8.1.0",
+        "mongoose": "^4.13.9",
+        "morgan": "^1.9.0"
+    }
+}
