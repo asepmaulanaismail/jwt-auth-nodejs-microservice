@@ -4,10 +4,29 @@ This is simple microservice for JWT Authentication with NodeJS & MongoDB.
 
 # How to Use
 
+### Running with Node & Nodemon
+
 ```
 git clone https://github.com/asepmaulanaismail/jwt-auth-nodejs-microservice
 cd jwt-auth-nodejs-microservice/
 node server.js
+```
+
+or
+
+```
+git clone https://github.com/asepmaulanaismail/jwt-auth-nodejs-microservice
+cd jwt-auth-nodejs-microservice/
+nodemon server.js
+```
+
+### Running with Docker
+
+```
+git clone https://github.com/asepmaulanaismail/jwt-auth-nodejs-microservice
+cd jwt-auth-nodejs-microservice/
+sudo docker build -t jwt-auth-nodejs:latest .
+sudo docker run -d -p 8080:8080 jwt-auth-nodejs
 ```
 
 # API List:
