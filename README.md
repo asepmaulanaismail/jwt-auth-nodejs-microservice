@@ -2,6 +2,14 @@
 
 This is simple microservice for JWT Authentication with NodeJS & MongoDB.
 
+# How to Use
+
+```
+git clone https://github.com/asepmaulanaismail/jwt-auth-nodejs-microservice
+cd jwt-auth-nodejs-microservice/
+node server.js
+```
+
 # API List:
 
 ## Basic Route
@@ -34,7 +42,7 @@ Response:
 
 Route to authenticate a user
 
-GET:   `localhost:8080/authenticate`
+POST:   `localhost:8080/authenticate`
 
 Params:
 
