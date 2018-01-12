@@ -4,7 +4,7 @@ FROM node:latest
 MAINTAINER Asep Maulana Ismail <asepmaulanaismail@gmail.com>
 
 # use nodemon for development
-RUN npm install nodemon
+RUN npm install -g nodemon
 
 # use cached layer for node modules
 ADD package.json /tmp/package.json
@@ -15,6 +15,6 @@ RUN mkdir -p /usr/src && cp -a /tmp/node_modules /usr/src/
 WORKDIR /usr/src
 ADD . /usr/src
 
-EXPOSE 3000
+EXPOSE 8080
 
-CMD ["nodemon", "-L", "/usr/src"]
+CMD ["nodemon", "/usr/src/server.js"]
