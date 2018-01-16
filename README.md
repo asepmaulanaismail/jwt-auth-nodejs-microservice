@@ -22,6 +22,8 @@ nodemon server.js
 
 ### Running with Docker
 
+See [how to install docker](https://github.com/asepmaulanaismail/install-docker-ubuntu-shell-script).
+
 ```
 git clone https://github.com/asepmaulanaismail/jwt-auth-nodejs-microservice
 cd jwt-auth-nodejs-microservice/
