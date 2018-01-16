@@ -70,7 +70,8 @@ Params:
 ```Javascript
 {
     "username": "asepmaulanaismail",
-    "password": "asep123!!"
+    "password": "asep123!!",
+    "deviceId": "1"
 }
 ```
 
@@ -94,7 +95,9 @@ Params:
 
 ```Javascript
 {
-    "token": "<YOUR TOKEN HERE>"
+    "token": "<YOUR TOKEN HERE>",
+    "deviceId": "1",
+    "username": "asepmaulanaismail"
 }
 ```
 
@@ -103,6 +106,31 @@ Response:
 ```Javascript
 {
     "message": "Welcome to the coolest API on earth!"
+}
+```
+
+## Verify API
+
+Verify token
+
+POST:   `localhost:8080/api/verify`
+
+Params:
+
+```Javascript
+{
+    "token": "<YOUR TOKEN HERE>",
+    "deviceId": "1",
+    "username": "asepmaulanaismail"
+}
+```
+
+Response:
+
+```Javascript
+{
+    "success": true,
+    "message": ""
 }
 ```
 
@@ -116,7 +144,9 @@ Params:
 
 ```Javascript
 {
-    "token": "<YOUR TOKEN HERE>"
+    "token": "<YOUR TOKEN HERE>",
+    "deviceId": "1",
+    "username": "asepmaulanaismail"
 }
 ```
 
@@ -132,4 +162,29 @@ Response:
         "__v": 0
     }
 ]
+```
+
+## Logout API
+
+Logging out
+
+POST:   `localhost:8080/api/logout`
+
+Params:
+
+```Javascript
+{
+    "token": "<YOUR TOKEN HERE>",
+    "deviceId": "1",
+    "username": "asepmaulanaismail"
+}
+```
+
+Response:
+
+```Javascript
+{
+    "success": true,
+    "message": ""
+}
 ```
