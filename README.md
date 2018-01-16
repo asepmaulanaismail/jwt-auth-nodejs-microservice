@@ -61,7 +61,7 @@ Response:
 
 Route to authenticate a user
 
-POST:   `localhost:8080/authenticate`
+POST:   `localhost:8080/api/authenticate`
 
 Params:
 
